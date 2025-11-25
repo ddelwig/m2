@@ -17,7 +17,7 @@ jobs:
     concurrency: production
     environment:
       name: production
-      url: https://www.example.com
+      url: https://hntestdemian.hypernode.io
     container: quay.io/hypernode/deploy:latest-php8.4-node22
     steps:
     - uses: actions/checkout@v3
