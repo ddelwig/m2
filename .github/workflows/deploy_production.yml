@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # See https://quay.io/repository/hypernode/deploy?tab=tags for all possible tags.
-    container: quay.io/hypernode/deploy:latest-php8.4-node22
+    container: quay.io/hypernode/deploy:latest-php8.3-node22
     steps:
     - uses: actions/checkout@v3
     - uses: actions/cache@v3
@@ -35,7 +35,7 @@ jobs:
     environment:
       name: production
       url: https://hntestdemian.hypernode.io
-    container: quay.io/hypernode/deploy:latest-php8.4-node22
+    container: quay.io/hypernode/deploy:latest-php8.3-node22
     steps:
     - uses: actions/checkout@v3
     - name: download build artifact
