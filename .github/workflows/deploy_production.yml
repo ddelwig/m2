@@ -32,6 +32,6 @@ jobs:
         key: ${{ runner.os }}-composer
     - uses: webfactory/ssh-agent@v0.7.0
       with:
-        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+        ssh-private-key: ${{ secrets.Production }}
     - run: mkdir -p $HOME/.ssh
     - run: hypernode-deploy deploy production -vvv  # Deploy production stage defined in deploy.php
